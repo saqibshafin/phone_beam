@@ -1,8 +1,21 @@
 // import 'package:fast_contacts/fast_contacts.dart';
 // import 'package:flutter/material.dart';
+// import 'package:signals/signals_flutter.dart';
 
-// class ContactsListViewFast extends StatelessWidget {
+// import '../data/constants/app_color.dart';
+
+// class ContactsListViewFast extends StatefulWidget {
 //   const ContactsListViewFast({super.key});
+
+//   @override
+//   State<ContactsListViewFast> createState() => _ContactsListViewFastState();
+// }
+
+// class _ContactsListViewFastState extends State<ContactsListViewFast> {
+//   /// --------Contacts--------
+//   final isLoadingContactsList = signal(false);
+//   List<Contact> contacts = <Contact>[];
+//   bool phoneContactsPermissionDenied = false;
 
 //   @override
 //   Widget build(BuildContext context) {
@@ -29,8 +42,8 @@
 //                   child: ListView.builder(
 //                     padding: const EdgeInsets.fromLTRB(0, 0, 0, 12),
 //                     shrinkWrap: true,
-//                     // itemCount: 2,
-//                     itemCount: controller.contactsFast.length,
+//                     itemCount: 2,
+//                     // itemCount: controller.contactsFast.length,
 //                     itemBuilder: ((context, index) {
 //                       Contact contact = controller.contactsFast[index];
 //                       String name = contact.displayName.isEmpty
@@ -120,6 +133,6 @@
 //               //       ],
 //               //     ),
 //               //   ),
-//     );
+//     )
 //   }
 // }
