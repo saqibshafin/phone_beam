@@ -41,6 +41,8 @@ dependencies:
   permission_handler: ^11.0.1
 
   flutter_riverpod: ^2.4.9
+  
+  signals: ^2.1.10
 
 dev_dependencies:
   flutter_test:

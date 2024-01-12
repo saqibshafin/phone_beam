@@ -24,7 +24,8 @@ class ContactsDialogFast extends StatelessWidget {
               width: size.width,
               height: 60,
               decoration: BoxDecoration(
-                color: AppColors.primary,
+                // color: AppColors.primary,
+                color: Theme.of(context).colorScheme.inversePrimary,
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(20),
                   topRight: Radius.circular(20),
@@ -53,7 +54,9 @@ class ContactsDialogFast extends StatelessWidget {
               child: SizedBox(
                 height: 50,
                 child: TextField(
-                  cursorColor: AppColors.primary,
+                  // cursorColor: AppColors.primary,
+                  cursorColor: Theme.of(context).colorScheme.inversePrimary,
+
                   decoration: InputDecoration(
                     contentPadding:
                         const EdgeInsets.symmetric(horizontal: 12, vertical: 0),
@@ -61,7 +64,8 @@ class ContactsDialogFast extends StatelessWidget {
                     prefixIcon: const Icon(Icons.search),
                     prefixIconColor: MaterialStateColor.resolveWith((states) {
                       if (states.contains(MaterialState.focused)) {
-                        return AppColors.primary;
+                        // return AppColors.primary;
+                        return Theme.of(context).colorScheme.inversePrimary;
                       } else {
                         return AppColors.grey;
                       }
@@ -85,7 +89,9 @@ class ContactsDialogFast extends StatelessWidget {
                 text: "Add Contact/s",
                 height: 44,
                 radius: 8,
-                color: AppColors.primary,
+                // color: AppColors.primary,
+                color: Theme.of(context).colorScheme.inversePrimary,
+
                 onTap: () async {
                   // Get.back();
 
